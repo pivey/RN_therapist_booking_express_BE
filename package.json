@@ -1,0 +1,14 @@
+{
+  "name": "js_booking_app_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start_server": "nodemon server.js"
+  },
+  "dependencies": {
+    "csv-parser": "3.0.0",
+    "express": "4.17.2",
+    "nodemon": "2.0.15"
+  }
+}
