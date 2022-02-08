@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 var readAndFormatCsv = require('./readAndFormatCsv');
 
@@ -12,8 +13,7 @@ app.get('/timeSlots', async (req,res)=> {
   res.send(therapistData);
 });
 
-const port = 5001;
 
-app.listen(port, () => {
-  console.log(`listening on port ${port}`)
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}`)
 })
